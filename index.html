@@ -43,6 +43,20 @@
     background:rgba(255,216,77,.25);
     border-radius:50%;
   }
+  .hero-logo{
+    display:block;
+    width:min(78%,320px);
+    height:auto;
+    margin:0 auto 18px;
+    border-radius:20px;
+    box-shadow:0 10px 28px rgba(0,0,0,.20);
+    position:relative;
+    z-index:1;
+  }
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
   .badge-row{
     display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
     margin-bottom:14px;
@@ -222,14 +236,14 @@
 <body>
 
 <header class="hero">
+  <img src="assets/logo.png" alt="石巻圏域 大学生の社会科見学｜取材型サマーインターン" class="hero-logo">
+  <h1 class="sr-only">石巻圏域 大学生の社会科見学｜取材型サマーインターン</h1>
   <div class="badge-row">
     <span class="badge">宿題なし！</span>
     <span class="badge">私服OK！</span>
     <span class="badge">短期5日間！</span>
   </div>
-  <img src="assets/logo.png" alt="石巻圏域 大学生の社会科見学 ロゴ" style="width:104px;height:104px;border-radius:50%;background:#fff;padding:4px;box-shadow:0 4px 14px rgba(0,0,0,.15);margin-bottom:14px;">
-  <h1>石巻圏域 大学生の社会科見学</h1>
-  <p class="sub">取材型サマーインターン｜事前案内</p>
+  <p class="sub">事前案内</p>
 </header>
 
 <div class="wrap">
