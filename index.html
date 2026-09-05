@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>石巻圏域 大学生の社会科見学｜取材型サマーインターン 事前案内</title>
+<style>
+  :root{
+    --blue:#2E9BE6;
+    --blue-dark:#1c6fa8;
+    --blue-pale:#eaf5fd;
+    --yellow:#FFD84D;
+    --yellow-deep:#F5B301;
+    --ink:#1e2b38;
+    --sub:#5b6b78;
+    --card:#ffffff;
+    --bg:#f5faff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    line-height:1.7;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px 60px;}
+  header.hero{
+    background:linear-gradient(160deg,var(--blue) 0%,var(--blue-dark) 100%);
+    color:#fff;
+    padding:44px 20px 36px;
+    text-align:center;
+    border-radius:0 0 28px 28px;
+    position:relative;
+    overflow:hidden;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute;
+    top:-40px;right:-40px;
+    width:160px;height:160px;
+    background:rgba(255,216,77,.25);
+    border-radius:50%;
+  }
+  .badge-row{
+    display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
+    margin-bottom:14px;
+  }
+  .badge{
+    background:var(--yellow);
+    color:#4a3800;
+    font-weight:700;
+    font-size:.78rem;
+    padding:5px 12px;
+    border-radius:999px;
+  }
+  header.hero h1{
+    font-size:1.7rem;
+    margin:0 0 8px;
+    font-weight:800;
+    letter-spacing:.02em;
+  }
+  header.hero p.sub{
+    display:inline-block;
+    background:rgba(255,255,255,.16);
+    padding:5px 16px;
+    border-radius:999px;
+    font-size:.9rem;
+    margin:0;
+  }
+  section{margin-top:34px;}
+  .section-title{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--blue);
+    color:#fff;
+    font-weight:800;
+    font-size:1.05rem;
+    padding:8px 18px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  .mark{
+    background:linear-gradient(transparent 60%, var(--yellow) 60%);
+    font-weight:700;
+    padding:0 2px;
+  }
+  .card{
+    background:var(--card);
+    border-radius:18px;
+    padding:18px 20px;
+    box-shadow:0 2px 10px rgba(28,111,168,.08);
+    margin-bottom:14px;
+  }
+  .goal-list{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
+  .goal-list li{
+    display:flex;gap:12px;align-items:flex-start;
+    background:var(--card);
+    border-radius:16px;
+    padding:14px 16px;
+    box-shadow:0 2px 10px rgba(28,111,168,.08);
+  }
+  .goal-list .icon{
+    flex:none;width:38px;height:38px;border-radius:50%;
+    background:var(--blue-pale);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.2rem;
+  }
+  .goal-list b{display:block;margin-bottom:2px;}
+  .goal-list span.note{color:var(--sub);font-size:.88rem;}
+
+  .flow{
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+  }
+  .flow .step{
+    flex:1 1 130px;
+    background:var(--card);
+    border-radius:16px;
+    padding:16px 12px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(28,111,168,.08);
+    position:relative;
+  }
+  .flow .step .num{
+    display:inline-block;
+    background:var(--yellow);
+    color:#4a3800;
+    font-weight:800;
+    border-radius:50%;
+    width:26px;height:26px;line-height:26px;
+    font-size:.85rem;
+    margin-bottom:8px;
+  }
+  .flow .step h3{margin:0 0 6px;font-size:.95rem;}
+  .flow .step p{margin:0;font-size:.8rem;color:var(--sub);}
+  .flow .arrow{align-self:center;color:var(--blue);font-size:1.2rem;font-weight:800;}
+
+  table.team{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    background:var(--card);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(28,111,168,.08);
+    font-size:.86rem;
+  }
+  table.team th,table.team td{
+    padding:10px 8px;
+    text-align:center;
+    border-bottom:1px solid #eef4fa;
+  }
+  table.team th{
+    background:var(--blue);
+    color:#fff;
+    font-weight:700;
+  }
+  table.team td.team-name{
+    font-weight:800;
+    color:var(--blue-dark);
+  }
+  table.team td.members{
+    text-align:left;
+    font-size:.78rem;
+    color:var(--sub);
+  }
+  .tag{
+    display:inline-block;
+    border-radius:8px;
+    padding:3px 8px;
+    font-size:.78rem;
+    font-weight:700;
+  }
+  .tag.full{background:var(--blue-pale);color:var(--blue-dark);}
+  .tag.am{background:#fff4d6;color:#7a5900;}
+  .tag.off{background:#f1f3f5;color:#8a97a3;}
+
+  .checklist{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+  .checklist li{
+    display:flex;gap:10px;align-items:flex-start;
+    background:var(--card);
+    border-radius:14px;
+    padding:12px 14px;
+    box-shadow:0 2px 10px rgba(28,111,168,.08);
+  }
+  .checklist li::before{
+    content:"✓";
+    flex:none;
+    background:var(--yellow);
+    color:#4a3800;
+    font-weight:800;
+    width:22px;height:22px;line-height:22px;
+    text-align:center;
+    border-radius:50%;
+    font-size:.8rem;
+  }
+  .contact{
+    background:var(--blue-dark);
+    color:#fff;
+    border-radius:16px;
+    padding:16px 18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .contact .icon{font-size:1.4rem;}
+  footer{
+    text-align:center;
+    color:var(--sub);
+    font-size:.8rem;
+    margin-top:40px;
+  }
+  @media (max-width:480px){
+    header.hero h1{font-size:1.4rem;}
+    .flow{flex-direction:column;}
+    .flow .arrow{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="badge-row">
+    <span class="badge">宿題なし！</span>
+    <span class="badge">私服OK！</span>
+    <span class="badge">短期5日間！</span>
+  </div>
+  <h1>石巻圏域 大学生の社会科見学</h1>
+  <p class="sub">取材型サマーインターン｜事前案内</p>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="section-title">🎯 このインターンでやること</div>
+    <ul class="goal-list">
+      <li>
+        <div class="icon">🏭</div>
+        <div>
+          <b>石巻の企業<span class="mark">7社</span>を巡って取材する</b>
+          <span class="note">1チームにつき2〜3社を訪問。インタビューや職場体験も。</span>
+        </div>
+      </li>
+      <li>
+        <div class="icon">📊</div>
+        <div>
+          <b><span class="mark">4つの軸</span>で企業を比較する</b>
+          <span class="note">仕事内容・キャリア／働き方・待遇／カルチャー・人柄／石巻で働く・暮らすイメージ</span>
+        </div>
+      </li>
+      <li>
+        <div class="icon">🧭</div>
+        <div>
+          <b>自分の<span class="mark">「就活で大事にしたい軸」</span>を見つける</b>
+          <span class="note">企業の良し悪しを決める場ではなく、比べてみて自分がどう感じるかを知る5日間です。</span>
+        </div>
+      </li>
+      <li>
+        <div class="icon">🤫</div>
+        <div>
+          <b>正直に書いてOK</b>
+          <span class="note">評価は無理によくする必要はありません。個人が特定される形で企業に伝わることはないので、感じたままに記録してください。</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-title">🗓️ 5日間の流れ</div>
+    <div class="flow">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Day1（9/14 月）</h3>
+        <p>事前研修<br>全チーム共通<br>13:30〜17:50</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <div class="num">2-4</div>
+        <h3>Day2〜4（9/15〜17）</h3>
+        <p>企業訪問<br>チームごとに訪問先が違う</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <div class="num">5</div>
+        <h3>Day5（9/18 金）</h3>
+        <p>比較・発表<br>全チーム共通<br>13:30〜17:00</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">👥 チーム別スケジュール（Day2〜4）</div>
+    <div class="card" style="overflow-x:auto;">
+      <table class="team">
+        <tr>
+          <th>チーム</th>
+          <th>9/15（火）</th>
+          <th>9/16（水）</th>
+          <th>9/17（木）</th>
+        </tr>
+        <tr>
+          <td class="team-name">A</td>
+          <td><span class="tag off">空き日</span></td>
+          <td><span class="tag full">大興水産</span><br>終日</td>
+          <td><span class="tag full">千葉工務店</span><br>終日</td>
+        </tr>
+        <tr>
+          <td class="team-name">B</td>
+          <td><span class="tag am">元気いちば</span><br>午前のみ</td>
+          <td><span class="tag full">真壁病院</span><br>終日</td>
+          <td><span class="tag am">石巻精機製作所</span><br>午前のみ</td>
+        </tr>
+        <tr>
+          <td class="team-name">C</td>
+          <td><span class="tag full">西條設計コンサルタント</span><br>終日</td>
+          <td><span class="tag off">空き日</span></td>
+          <td><span class="tag am">マルカ高橋</span><br>午前のみ</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+      <table class="team" style="box-shadow:none;">
+        <tr><th style="border-radius:0;">チーム</th><th style="border-radius:0;" colspan="5">メンバー</th></tr>
+        <tr><td class="team-name">A</td><td class="members" colspan="5">佐藤瞬太郎・工藤拓海・佐々木碧唯・加藤璃玖</td></tr>
+        <tr><td class="team-name">B</td><td class="members" colspan="5">及川葵蓮・佐藤優太・舘内大和・野崎智史・三澤拓己</td></tr>
+        <tr><td class="team-name">C</td><td class="members" colspan="5">尾崎裕介・阿部真裟人・小堺悠真・阿部遼斗・小松仁</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">🎒 持ち物・服装</div>
+    <ul class="checklist">
+      <li>スマホ（必須）</li>
+      <li>筆記用具</li>
+      <li>パソコン（必須・LINEをインストールして持参）<br><span class="note" style="color:var(--sub);font-size:.82rem;">連絡は基本LINEで届きます。パソコンでも届いたリンクからGoogleドキュメント等をすぐ開けるようにしておいてください。</span></li>
+      <li>Googleアカウントにログインできる状態にしておく</li>
+      <li>服装は<span class="mark">私服</span>でOK（現場見学がある企業は当日別途案内します）</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-title">📮 緊急連絡先</div>
+    <div class="contact">
+      <div class="icon">💬</div>
+      <div>遅刻・欠席・緊急時は<b>小川のLINE</b>まで連絡してください。</div>
+    </div>
+  </section>
+
+  <footer>
+    石巻圏域 大学生の社会科見学 － 取材型サマーインターン<br>
+    企画・運営：合同会社まちひとワークス
+  </footer>
+
+</div>
+</body>
+</html>
